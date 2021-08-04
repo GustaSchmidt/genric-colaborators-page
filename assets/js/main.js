@@ -24,3 +24,10 @@ function mount_card_string(person_id, foto, nome, cargo){
     `;
     return card_string;
 }
+document.addEventListener("DOMContentLoaded", function(event) {
+    var data = loadJSONData('./Dados/dados.json');
+    var obj = document.getElementById("options");
+    for (var i = 0; i < data.length; i++){
+        obj.innerHTML = obj.innerHTML + mount_card_string(data[i].id, data[i].foto, data[i].nome, data[i].cargo);
+    }
+});
