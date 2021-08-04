@@ -39,6 +39,9 @@ header #menu ul li{
     display: inline-block;
     margin: 0 15px;
 }
+header #menu ul li:last-of-type{
+    margin-right: 0;
+}
 body{
     background-color: #dbdbdb;
 }
@@ -49,13 +52,11 @@ body{
 .selected-warper{
     display: flex;
 }
-.card-warper{
-    display: flex;
-}
 #selected-person{
     background-color: #f1f1ef;
     padding: 30px;
-    margin: 20px 0;
+    margin: 20px;
+    margin-top: 40px;
     box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 .dados-user table{
@@ -77,4 +78,28 @@ body{
 }
 .dados-user table td:first-of-type::after{
     content: ':';
+}
+.card-warper{
+    padding: 20px;
+    display: flex;
+}
+.card .card-warp:hover{
+    cursor: pointer;
+}
+.card-warp{
+    display: flex;
+    padding: 10px;
+    background: #f1f1ef;
+    width: 100%;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.card .dados-user {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.card .dados-user h1{
+
+}
+.card .dados-user h2{
+
 }
