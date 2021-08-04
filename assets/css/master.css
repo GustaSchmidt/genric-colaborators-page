@@ -45,9 +45,23 @@ header #menu ul li:last-of-type{
 body{
     background-color: #dbdbdb;
 }
+.foto-user{
+    position: relative;
+}
 .foto-user img{
     border-radius: 50%;
     width: 100px;
+}
+.foto-user .notification {
+	background: #4dd1d3;
+	padding: 7px;
+	font-size: 13px;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	text-align: center;
+	margin-left: -27px;
 }
 .selected-warper{
     display: flex;
@@ -94,12 +108,14 @@ body{
     box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 .card .dados-user {
-	margin-top: 20px;
+	margin-top: 31px;
 	margin-left: 10px;
 }
-.card .dados-user h1{
-
+.card .dados-user h2 {
+	font-size: 20px;
+	font-weight: bold;
 }
-.card .dados-user h2{
-
+.card .dados-user h3{
+    font-size: 17px;
+    font-weight: lighter;
 }
