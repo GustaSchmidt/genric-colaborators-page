@@ -1,9 +1,6 @@
 .col-full{
     width: 100%;
 }
-.col-3{
-    width: 33.33333333%;
-}
 .line{
     display: flex;
     flex-wrap: wrap;
@@ -14,12 +11,18 @@
         width: 100%;
         margin: 0 auto;
     }
+    .col-3{
+        width: 100%;
+    }
 }
 /* Desktop 920px > */
 @media (min-width: 920px){
     .container{
         width: 900px;
         margin: 0 auto;
+    }
+    .col-3{
+        width: 33.33333333%;
     }
 }
 /* Desktops e televizões 1280px > */
