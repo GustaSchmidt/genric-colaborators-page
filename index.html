@@ -62,22 +62,15 @@
                 </div>
             </section>
             <section id="options" class="line">
-                <div class="col-3 card">
-                    <div class="card-warper">
-                        <div class="card-warp">
-                            <div class="foto-user">
-                                <img src="./assets/retratos/foto-alberto.jpg" alt="">
-                                <span class="notification" array-id="1">1</span>
-                            </div>
-                            <div class="dados-user">
-                                <h2>Alberto</h2>
-                                <h3>Presidente</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </section>
         </div>
+        <script type="text/javascript">
+            var data = loadJSONData('./Dados/dados.json');
+            var obj = document.getElementById("options");
+            for (var i = 0; i < data.length; i++){
+                obj.innerHTML = obj.innerHTML + mount_card_string(data[i].id, data[i].foto, data[i].nome, data[i].cargo);
+            }
+        </script>
     </body>
 </html>
