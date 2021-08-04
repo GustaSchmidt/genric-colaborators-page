@@ -39,3 +39,42 @@ header #menu ul li{
     display: inline-block;
     margin: 0 15px;
 }
+body{
+    background-color: #dbdbdb;
+}
+.foto-user img{
+    border-radius: 50%;
+    width: 100px;
+}
+.selected-warper{
+    display: flex;
+}
+.card-warper{
+    display: flex;
+}
+#selected-person{
+    background-color: #f1f1ef;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.dados-user table{
+	height: 100%;
+	margin-left: 20px;
+	font-size: 20px;
+}
+.dados-user table tr{
+    line-height: 2px;
+}
+.dados-user table td{
+    font-weight: bold;
+    font-size: 16px;
+}
+.dados-user table td:first-of-type{
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+.dados-user table td:first-of-type::after{
+    content: ':';
+}
